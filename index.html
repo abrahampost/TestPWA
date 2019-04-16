@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QuadraticEquation</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="semantic.min.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="ui top fixed menu padded">
+        <h1 class="ui centered header">Quadratic Equation Solver</h1>
+    </div>
+    <div class="ui container">
+        <form class="ui form">
+            <div class="field">
+                <label>a:</label>
+                <input type="number" id="a"></input>
+            </div>
+            <div class="field">
+                <label>b:</label>
+                <input type="number" id="b"></input>
+            </div>
+            <div class="field">
+                <label>c:</label>
+                <input type="number" id="c"></input>
+            </div>
+            <button class="ui button" type="button" id="calculate">Calculate</button>
+        </form>
+        <div class="answer-block">
+            <p>Answer: <span id="answer"></span></p>
+        </div>
+    </div>
+</body>
+</html>
