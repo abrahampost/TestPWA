@@ -28,7 +28,7 @@
             app.answer.textContent = 'result is undefined';
             return;
         }
-        
+
         let rootOne = (-b + Math.sqrt(determinant)) / (2 * a);
         let rootTwo = (-b - Math.sqrt(determinant)) / (2 * a);
         if (rootOne === rootTwo) {
@@ -42,6 +42,7 @@
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker
             .register('./service-worker.js')
-            .then(console.log('Service worker registered'));
+            .then(console.log('Service worker registered'))
+            .catch(e => console.error(e));
     }
 })();

@@ -1,11 +1,11 @@
-const cacheName = 'simplemath';
+var cacheName = 'simplemath';
 
-const filesToCache = [
+var filesToCache = [
     '/',
     '/index.html',
     '/main.js',
     '/main.css',
-    'images/stotts192.png',
+    '/images/stotts192.png',
 ];
 
 self.addEventListener('install', (e) => {
